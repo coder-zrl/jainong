@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="io.renren.dao.ProductOutboundDao">
+
+	<!-- 可根据自己的需求，是否要使用 -->
+    <resultMap type="io.renren.entity.ProductOutboundEntity" id="productOutboundMap">
+        <result property="id" column="id"/>
+        <result property="productId" column="product_id"/>
+        <result property="productName" column="product_name"/>
+        <result property="purchasePrice" column="purchase_price"/>
+        <result property="totalJinNumber" column="total_jin_number"/>
+        <result property="amount" column="amount"/>
+        <result property="handler" column="handler"/>
+        <result property="outboundTime" column="outbound_time"/>
+        <result property="geographicalName" column="geographical_name"/>
+        <result property="farmerId" column="farmer_id"/>
+        <result property="receivingParty" column="receiving_party"/>
+    </resultMap>
+
+
+</mapper>

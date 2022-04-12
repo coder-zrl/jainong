@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="io.renren.dao.ProductStorageDao">
+
+	<!-- 可根据自己的需求，是否要使用 -->
+    <resultMap type="io.renren.entity.ProductStorageEntity" id="productStorageMap">
+        <result property="id" column="id"/>
+        <result property="productId" column="product_id"/>
+        <result property="productName" column="product_name"/>
+        <result property="purchasePrice" column="purchase_price"/>
+        <result property="totalJinNumber" column="total_jin_number"/>
+        <result property="amount" column="amount"/>
+        <result property="checkOne" column="check_one"/>
+        <result property="handler" column="handler"/>
+        <result property="storageTime" column="storage_time"/>
+        <result property="geographicalName" column="geographical_name"/>
+        <result property="farmerId" column="farmer_id"/>
+    </resultMap>
+
+
+</mapper>

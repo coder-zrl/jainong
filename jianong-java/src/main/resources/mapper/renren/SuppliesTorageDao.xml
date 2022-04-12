@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="io.renren.dao.SuppliesTorageDao">
+
+	<!-- 可根据自己的需求，是否要使用 -->
+    <resultMap type="io.renren.entity.SuppliesTorageEntity" id="suppliesTorageMap">
+        <result property="id" column="id"/>
+        <result property="suppliesId" column="supplies_id"/>
+        <result property="suppliesName" column="supplies_name"/>
+        <result property="suppliesSellPrice" column="supplies_sell_price"/>
+        <result property="suppliesNumber" column="supplies_number"/>
+    </resultMap>
+
+
+</mapper>
