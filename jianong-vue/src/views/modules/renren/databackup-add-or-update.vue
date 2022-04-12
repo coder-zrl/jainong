@@ -4,14 +4,8 @@
     :close-on-click-modal="false"
     :visible.sync="visible">
     <el-form :model="dataForm" :rules="dataRule" ref="dataForm" @keyup.enter.native="dataFormSubmit()" label-width="80px">
-    <el-form-item label="备份标识" prop="identification">
-      <el-input v-model="dataForm.identification" placeholder="备份标识"></el-input>
-    </el-form-item>
     <el-form-item label="备注" prop="remark">
       <el-input v-model="dataForm.remark" placeholder="备注"></el-input>
-    </el-form-item>
-    <el-form-item label="备份时间" prop="creatAt">
-      <el-input v-model="dataForm.creatAt" placeholder="备份时间"></el-input>
     </el-form-item>
     </el-form>
     <span slot="footer" class="dialog-footer">
@@ -30,7 +24,6 @@
           id: 0,
           identification: '',
           remark: '',
-          creatAt: ''
         },
         dataRule: {
           identification: [
@@ -39,9 +32,6 @@
           remark: [
             { required: true, message: '备注不能为空', trigger: 'blur' }
           ],
-          creatAt: [
-            { required: true, message: '备份时间不能为空', trigger: 'blur' }
-          ]
         }
       }
     },
